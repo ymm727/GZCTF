@@ -18,7 +18,7 @@ import { Callout } from "nextra-theme-docs";
 {
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "Database": "Host=db:5432;Database=gzctf;Username=postgres;Password=AaCd361029"
+    "Database": "Host=db:5432;Database=gzctf;Username=postgres;Password=<Database Password>"
     // redis is optional
     //"RedisCache": "cache:6379,password=<Redis Password>"
   },
@@ -76,12 +76,12 @@ import { Callout } from "nextra-theme-docs";
       "BypassCertVerify": false
     }
   },
-  "XorKey": "AaCd361029",
+  "XorKey": "<Random Key Str>",
   "ContainerProvider": {
-    "Type": "Kubernetes"
+    "Type": "Docker", // or "Kubernetes"
     "PortMappingType": "Default",
     "EnableTrafficCapture": false,
-    "PublicEntry": "223.104.110.231", 
+    "PublicEntry": "ctf.example.com", // or "xxx.xxx.xxx.xxx"
     "DockerConfig": {
       // optional
       "SwarmMode": false,
